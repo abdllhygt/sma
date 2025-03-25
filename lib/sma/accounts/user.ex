@@ -11,6 +11,7 @@ defmodule Sma.Accounts.User do
     field :confirmed_at, :utc_datetime
     field :language, Ecto.Enum, values: [:en, :tr], default: :tr
     field :country, Ecto.Enum, values: [:TR], default: :TR
+    field :is_moderator, :boolean, default: false
 
     timestamps(type: :utc_datetime)
   end

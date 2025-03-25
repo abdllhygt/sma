@@ -11,6 +11,7 @@ defmodule Sma.Repo.Migrations.CreateUsersAuthTables do
       add :confirmed_at, :utc_datetime
       add :language, :string, null: false
       add :country, :string, null: false
+      add :is_moderator, :boolean, null: false
 
       timestamps(type: :utc_datetime)
     end
