@@ -10,7 +10,7 @@ defmodule Sma.Accounts.User do
     field :current_password, :string, virtual: true, redact: true
     field :confirmed_at, :utc_datetime
     field :language, Ecto.Enum, values: [:en, :tr], default: :tr
-    field :country, Ecto.Enum, values: [:turkiye], default: :turkiye
+    field :country, Ecto.Enum, values: [:TR], default: :TR
 
     timestamps(type: :utc_datetime)
   end
