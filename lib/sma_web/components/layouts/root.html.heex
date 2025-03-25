@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="csrf-token" content={get_csrf_token()} />
     <.live_title suffix=" · Phoenix Framework">
-      <%= assigns[:page_title] || "Sma" %>
+      <%= assigns[:page_title] || "smadb" %>
     </.live_title>
     <link phx-track-static rel="stylesheet" href={~p"/assets/app.css"} />
     <script defer phx-track-static type="text/javascript" src={~p"/assets/app.js"}>
@@ -23,7 +23,7 @@
             href={~p"/users/settings"}
             class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
           >
-            Settings
+            Ayarlar
           </.link>
         </li>
         <li>
@@ -32,7 +32,7 @@
             method="delete"
             class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
           >
-            Log out
+            Çıkış
           </.link>
         </li>
       <% else %>
@@ -41,7 +41,7 @@
             href={~p"/users/register"}
             class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
           >
-            Register
+            Kayıt
           </.link>
         </li>
         <li>
@@ -49,7 +49,7 @@
             href={~p"/users/log_in"}
             class="text-[0.8125rem] leading-6 text-zinc-900 font-semibold hover:text-zinc-700"
           >
-            Log in
+            Giriş
           </.link>
         </li>
       <% end %>
